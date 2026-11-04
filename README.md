@@ -26,7 +26,15 @@ flowchart LR
 Light 12 - topic `student/CASA0014/luminaire/12`
 
 ## What the colours mean
-<!-- soft / medium / hard squeeze, and columns lighting up -->
+
+| Squeeze | Colour | Meaning | Columns lit |
+|---|---|---|---|
+| None | Off | Released / relaxed | 0 |
+| Soft | Light blue | Calm | 1–3 |
+| Medium | Purple | Tension building | about 6 |
+| Hard | Red | High stress | all 12 |
+
+The harder the ball is squeezed, the more of Vespera's 12 columns light up and the brighter the colour gets. Letting go will turn off Vespera.
 
 ## Hardware
 - Arduino MKR WiFi 1010
@@ -36,6 +44,9 @@ Light 12 - topic `student/CASA0014/luminaire/12`
 - Breadboard
 - 3.7V 2000mAh LiPo battery
 
+<img width="4127" height="4150" alt="01_kit_parts" src="https://github.com/user-attachments/assets/fd48dd2d-4925-4850-b798-64ee57208f35" />
+
+
 ## Wiring
 | Part | Connects to |
 |---|---|
@@ -43,7 +54,10 @@ Light 12 - topic `student/CASA0014/luminaire/12`
 | FSR leg 2 (black wire) | A0 |
 | 10kΩ resistor | A0 → GND (blue rail) |
 | Ground wire | GND → blue rail |
-<!-- photo + VCC -> FSR -> A0 -> 10kΩ resistor -> GND -->
+
+![Wiring diagram](images/05_wiring_diagram.png)
+
+![Wiring](<images/05_wiring_from_above .jpeg>)
 
 ## Repository contents
 - `squeeze_ball_vespera/` - main Arduino code
