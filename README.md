@@ -6,10 +6,9 @@ My project is based on a stress ball interface, to be used by participants who a
 
 light blue = calm, purple = building tension, red = high stress.
 
-<p align="center">
-  <video src="https://github.com/user-attachments/assets/PASTE-YOUR-VIDEO-LINK-HERE" width="300" controls></video>
-</p>
-<p align="center"><em>Vespera reacting to the squeeze ball (light 12)</em></p>
+https://github.com/user-attachments/assets/21c0f5de-f700-445d-83a2-5ed1e2cfdad9
+
+*Vespera reacting to the squeeze ball (light 12)*
 
 ## How it works
 Squeezing the stress ball -> changes the sensor reading -> MKR WiFi 1010 (turns the squeeze into a colour and number of columns) -> WiFi -> MQTT broker (mqtt.cetools.org, topic 12) -> Vespera (light blue = soft, red = hard)
@@ -82,10 +81,25 @@ The harder the ball is squeezed, the more of Vespera's 12 columns light up and t
 </p>
 <p align="center"><em>The onboard LED gets brighter the harder the sensor is squeezed </em></p>
 
+<div align="center">
+  <img width="300" alt="16_selector_dial_12" src="https://github.com/user-attachments/assets/3ab64125-7196-440c-883d-d15256e5bcc5" />
+  <p><em>Selector dial set to 12</em></p>
+</div>
+
+*Selector dial set to 12*
+
+https://github.com/user-attachments/assets/444fe980-b7e4-4a0e-870a-c81fcd8772e0
+
+*Test on Luminaire*
+
+![MQTT Explorer](images/20_mqtt_explorer.jpg)
+
+*Messages arriving on student/CASA0014/luminaire/12 when the ball is squeezed*
+
 ## Problems and fixes
 - **High readings with no squeeze (700–950):** first suspected the black anti-static foam, but moving it did not resolve the issue. The real cause was the A0 wire not pushed in properly.
 - **Grid lit up by itself:** the resistor leg and sensor wires were loose. Reseated them to resolve issue.
-- **"Not connected" when uploading:** the Mac gave the board a new port. I Re-selected the port to fix issue.
+- **"Not connected" when uploading:** the Mac gave the board a new port. I re-selected the port to fix issue.
 - **Orange instead of red on Vespera:** the colour included a little green (40). So I reset green to 0 and redesigned the colours (light blue → purple → red) gave a true red.
 
 | FSR sensor resting on black foam | Resistor was very loose |
