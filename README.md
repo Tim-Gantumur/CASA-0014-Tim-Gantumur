@@ -10,6 +10,20 @@ https://github.com/user-attachments/assets/21c0f5de-f700-445d-83a2-5ed1e2cfdad9
 
 *Vespera reacting to the squeeze ball (light 12)*
 
+## Contents
+- [How it works](#how-it-works)
+- [Which light is mine](#which-light-is-mine)
+- [What the colours mean](#what-the-colours-mean)
+- [Hardware](#hardware)
+- [Wiring](#wiring)
+- [Repository contents](#repository-contents)
+- [Testing log](#testing-log)
+- [Problems and fixes](#problems-and-fixes)
+- [Limitations](#limitations)
+- [How to set it up yourself](#how-to-set-it-up-yourself)
+- [References](#references)
+- [Acknowledgements](#acknowledgements)
+
 ## How it works
 Squeezing the stress ball -> changes the sensor reading -> MKR WiFi 1010 (turns the squeeze into a colour and number of columns) -> WiFi -> MQTT broker (mqtt.cetools.org, topic 12) -> Vespera (light blue = soft, red = hard)
 
